@@ -8,7 +8,8 @@ const salvarBotao = document.getElementById('salvarRegistro');
 const registrosList = document.getElementById('registrosList');
 const registros = [];
 
-function salvarRegistro() {
+function salvarRegistro(e) {
+    e.preventDefault();
     const nome = nomeInput.value;
     const sobrenome = sobrenomeInput.value;
     const idade = parseInt(idadeInput.value);
